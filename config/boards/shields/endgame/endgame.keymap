@@ -122,6 +122,16 @@
 };
 
 / {
+
+    chosen {
+        zmk,battery = &vbatt;
+    };
+
+    vbatt: vbatt {
+            compatible = "zmk,battery-nrf-vddh";
+            label = "VBATT";
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -167,18 +177,6 @@
             layers = <2>;
         };
 
-//        Cmb_LSFT {
-//            bindings = <&kp LSHFT>;
-//            key-positions = <12 13>;
-//            layers = <0 2 3>;
-//        };
-
-//        Cmb_RSFT {
-//            bindings = <&kp RSHFT>;
-//            key-positions = <16 17>;
-//            layers = <0 1 2 3>;
-//        };
-
         Cmb_LGUI {
             bindings = <&kp LGUI>;
             key-positions = <10 20>;
@@ -202,12 +200,6 @@
             key-positions = <22 23>;
             layers = <0 1 2 4>;
         };
-
-//        Cmb_CLCK {
-//            bindings = <&kp CLCK>;
-//            key-positions = <12 13 16 17>;
-//            layers = <1>;
-//        };
 
         Cmb_CLCKs {
             bindings = <&kp CLCK>;
@@ -275,12 +267,6 @@
             layers = <0>;
         };
 
-//        Cmb_Paste_sm {
-//            bindings = <&kp LC(V)>;
-//            key-positions = <23 25>;
-//            layers = <0>;
-//        };
-
         Cmb_Reset {
             bindings = <&bootloader>;
             key-positions = <11 12 13>;
@@ -333,26 +319,6 @@
             bindings = <&MCR_SCH>;
             key-positions = <12 22>;
         };
-    };
-
-//#define BASE 0
-//#define SYM  1
-//#define NUM  2
-//#define FUN  3
-//#define NAV  4
-//#define OTHER 5
-
-
-
-
-/ {
-    chosen {
-        zmk,battery = &vbatt;
-    };
-
-    vbatt: vbatt {
-        compatible = "zmk,battery-nrf-vddh";
-        label = "VBATT";
     };
 
     keymap {

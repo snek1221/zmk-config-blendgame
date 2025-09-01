@@ -14,7 +14,7 @@
 
 &mt {
     tapping-term-ms = <250>;
-    flavor = "tap-unless-interrupted";
+    flavor = "tap-preferred";
 };
 
 / {

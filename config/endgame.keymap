@@ -13,6 +13,8 @@
 #define BT_CTRL  2
 
 &mt {
+    tapping-term-ms = <250>;
+    flavor = "tap-unless-interrupted";
 };
 
 / {

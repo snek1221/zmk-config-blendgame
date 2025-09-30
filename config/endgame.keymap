@@ -42,7 +42,7 @@
         bt_control {
             bindings = <
 &none     &kp UP_ARROW    &none      &none   &none   &kp F1  &kp F2   &kp F3   &kp F4   &bt BT_CLR
-&kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans  &kp F5  &kp F6   &kp F7   &kp F8   &bt BT_NXT
+&kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp A   &trans  &kp F5  &kp F6   &kp F7   &kp F8   &bt BT_NXT
 &trans    &trans          &trans     &trans  &trans  &kp F9  &kp F10  &kp F11  &kp F12  &bt BT_PRV
 &trans    &trans          &trans     &trans  &trans  &trans
             >;
